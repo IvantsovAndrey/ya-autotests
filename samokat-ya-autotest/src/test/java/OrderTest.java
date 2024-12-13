@@ -29,7 +29,7 @@ public class OrderTest {
     public static Object[][] getTestData() {
         return new Object[][] {
                 {"Chrome", "Иван Иванов", "Москва, ул. Тверская, 1"},
-                {"Firefox", "Анна Петрова", "Санкт-Петербург, Невский пр., 10"}
+        {"Firefox", "Анна Петрова", "Санкт-Петербург, Невский пр., 10"}
         };
     }
 
@@ -43,8 +43,6 @@ public class OrderTest {
             driver = new FirefoxDriver();
         }
 
-        // Установка разрешения как на MacBook Pro 16
-        driver.manage().window().setSize(new Dimension(3072, 1920)); // Размер экрана
         driver.get("https://qa-scooter.praktikum-services.ru/");
     }
 

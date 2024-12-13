@@ -1,5 +1,4 @@
 package pageobject;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +36,7 @@ public class MainPage {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         // Ждём, пока элемент станет кликабельным, и кликаем
         wait.until(ExpectedConditions.elementToBeClickable(questionElement));
-       // wait.until(driver -> questionElement.isDisplayed());
+        // wait.until(driver -> questionElement.isDisplayed());
         questionElement.click();
     }
     // Метод для получения текста ответа

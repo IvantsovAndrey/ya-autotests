@@ -16,7 +16,7 @@ public class OrderPage {
 
     // Локаторы для шага 2
     private By datePicker = By.xpath("//input[@placeholder='* Когда привезти самокат']");
-    private By rentalDurationDropdown = By.className("Dropdown-control");
+    private By rentalDurationDropdown = By.className("Dropdown-arrow");
     private By colorCheckboxBlack = By.id("black");
     private By colorCheckboxGrey = By.id("grey");
     private By commentField = By.xpath("//input[@placeholder='Комментарий для курьера']");
@@ -24,7 +24,8 @@ public class OrderPage {
     // Кнопки
     private By nextButton = By.xpath("//button[text()='Далее']");
     private By orderButton = By.xpath("//button[text()='Заказать']");
-    private By confirmButton = By.xpath("//button[text()='Да']");
+    private By confirmButton = By.xpath("//button[text()='Да']");//я использовал 4 вида локаторов и не один не подошел
+
 
     // Успешное сообщение
     private By successMessage = By.className("Order_Modal__success");
